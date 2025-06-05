@@ -4,9 +4,14 @@
   grid-template-areas:
     "Header content";
   grid-template-columns: 1fr 3fr;
-  gap: 5px;
+  /* gap: 5px; */
   background-color: #2196F3;
   padding: 5px;
+}
+
+.container > header {
+    background-color: #494a5e;
+    /* color: #fff; */
 }
 
 .container > header div.Name {
@@ -17,4 +22,9 @@
   background-color: lightslategray;
   padding: 5px;
   margin: 10px;
+}
+
+.container > main {
+    background-color: #222430;
+    color: #fff;
 }
