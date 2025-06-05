@@ -13,6 +13,8 @@
     text-align: center;
 }
 
-.container > header div.Menu #menuItem {
+.container > header div.Menu div#menuItem {
   background-color: lightslategray;
+  padding: 5px;
+  margin: 10px;
 }
