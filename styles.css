@@ -8,3 +8,11 @@
   background-color: #2196F3;
   padding: 5px;
 }
+
+.container > header div.Name {
+    text-align: center;
+}
+
+.container > header div.Menu #menuItem {
+  background-color: lightslategray;
+}
