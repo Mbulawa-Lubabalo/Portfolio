@@ -27,4 +27,9 @@
 .container > main {
     background-color: #222430;
     color: #fff;
+    display: grid;
+    grid-template-areas:
+    "myInfo myImage";
+    grid-template-columns: 2fr 1fr;
+    
 }
