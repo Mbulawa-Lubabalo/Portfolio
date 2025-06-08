@@ -12,5 +12,8 @@
     ],
 
     "certificates": null,
-    "contactDetails": null
+    "contactDetails": {
+        "cellphone-number": "0616699130",
+        "email-address": "lmbulawa4@gmail.com"
+    }
 }
