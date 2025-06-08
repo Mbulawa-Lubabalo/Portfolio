@@ -11,7 +11,16 @@
         "https://github.com/Mbulawa-Lubabalo/Galaxy_War"
     ],
 
-    "certificates": null,
+    "certificates": {
+        "sololearn": {
+            "python-intermediate": "https://www.linkedin.com/in/lubabalo-mbulawa-683237184/details/certifications/1635555286849/single-media-viewer/?profileId=ACoAACt1_gMBfZInXCOHsre_RMNBsan3XrEWkyQ",
+            "javascript-intermediate": "https://www.linkedin.com/in/lubabalo-mbulawa-683237184/details/certifications/1708005065584/single-media-viewer/?profileId=ACoAACt1_gMBfZInXCOHsre_RMNBsan3XrEWkyQ"
+        },
+        "Le-wagon": "https://app.lewagon.school/certificates/qhidpjmlk0",
+        "codeSpace": "https://www.linkedin.com/in/lubabalo-mbulawa-683237184/details/certifications/1705152144148/single-media-viewer/?profileId=ACoAACt1_gMBfZInXCOHsre_RMNBsan3XrEWkyQ",
+        "hackerRank": "https://www.hackerrank.com/certificates/1efbc66db5b0"
+    },
+
     "contactDetails": {
         "cellphone-number": "0616699130",
         "email-address": "lmbulawa4@gmail.com"
