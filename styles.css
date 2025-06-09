@@ -34,6 +34,37 @@
     
 }
 
+/*-----------Resume-----------------------------------------------------*/
+.resume {
+  margin-top: 20px;
+  padding: 10px;
+  /* background-color: #e8f0fe; */
+  border-radius: 8px;
+  max-width: 600px;
+}
+
+.resume h2 {
+  color: #1a73e8;
+  margin-bottom: 10px;
+}
+
+.resume a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid #1a73e8;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.resume a:hover {
+  background-color: #1a73e8;
+  color: white;
+}
+
+
 
 
 /*-----------Projects----------------------------------------------*/

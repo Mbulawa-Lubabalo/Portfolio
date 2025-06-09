@@ -11,6 +11,23 @@ fetch("data.json")
 
         const projectsSection = document.querySelector('.projects');
         const contactSection = document.querySelector('.contactDetails');
+        const resumeSection = document.querySelector('.resume');
+
+
+/**-------Resume-------------------------------------------------- */
+        resumeSection.innerHTML = `<h2>Resume</h2>`;
+
+        if (data.resume) {
+        const resumeLink = document.createElement('a');
+        resumeLink.href = data.resume;
+        resumeLink.textContent = 'Download Resume';
+        resumeLink.target = '_blank';
+        resumeLink.rel = 'noopener noreferrer';
+        resumeSection.appendChild(resumeLink);
+        } else {
+        resumeSection.innerHTML += '<p>No resume available.</p>';
+        }
+
     
 
 /**-------Projects-------------------------------- */
