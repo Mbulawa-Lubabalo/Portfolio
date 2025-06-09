@@ -10,6 +10,7 @@
 }
 
 .container > header {
+    grid-area: Header;
     background-color: #494a5e;
     /* color: #fff; */
 }
@@ -25,18 +26,50 @@
 }
 
 .container > main {
+    grid-area: content;
     background-color: #222430;
     color: #fff;
     display: grid;
     /* grid-template-areas:
     "myInfo myImage";
-    grid-template-columns: 2fr 1fr; */
-    
+    grid-template-columns: 2fr 1fr; */ 
 }
-/*---------------------------------*/
+
+/*---------HOME------------------------------*/
 .home {
-  display: block;
+  display: grid;
+  grid-template-areas: "intro myImage";
+  grid-template-columns: 2fr 1fr;
+  /* padding: 10px; */
+  gap: 1px;
+  /* align-items: center; */
 }
+
+/* Assign areas to child elements */
+.intro {
+  grid-area: intro;
+  background-color: #0077cc;
+}
+
+.myImage {
+  grid-area: myImage;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  background-color: yellowgreen;
+}
+
+.myImage img {
+  max-width: 200px;
+  border-radius: 8px;
+}
+
+
+
+/*---------------------------------*/
+/* .home {
+  display: block;
+} */
 
 .resume,
 .projects,
