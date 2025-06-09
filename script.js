@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sections.forEach(sec => {
             const el = document.querySelector(`.${sec}`) || document.getElementById(sec);
             if (el) {
-            el.style.display = (sec === sectionClass) ? 'block' : 'none';
+            el.style.display = (sec === sectionClass) ? 'grid' : 'none';
             }
         });
     }

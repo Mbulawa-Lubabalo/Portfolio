@@ -1,206 +1,203 @@
 /* For decktop */
-.container {
-  display: grid;
-  grid-template-areas:
-    "Header content";
-  grid-template-columns: 1fr 3fr;
-  /* gap: 5px; */
-  background-color: #2196F3;
-  padding: 5px;
-}
+/* @media (min-width: 1025px) and (max-width: 1280px) { */
 
-.container > header {
-    grid-area: Header;
-    background-color: #494a5e;
-    /* color: #fff; */
-}
-
-.container > header div.Name {
-    text-align: center;
-}
-
-.container > header div.Menu div#menuItem {
-  background-color: lightslategray;
-  padding: 5px;
-  margin: 10px;
-}
-
-.container > main {
-    grid-area: content;
-    background-color: #222430;
-    color: #fff;
+  .container {
     display: grid;
-    /* grid-template-areas:
-    "myInfo myImage";
-    grid-template-columns: 2fr 1fr; */ 
-}
+    grid-template-areas:
+      "Header content";
+    grid-template-columns: 1fr 3fr;
+    /* gap: 5px; */
+    background-color: #2196F3;
+    padding: 5px;
+    width: 90%;
+    margin: 0 auto;
+  }
 
-/*---------HOME------------------------------*/
-.home {
-  display: grid;
-  grid-template-areas: "intro myImage";
-  grid-template-columns: 2fr 1fr;
-  /* padding: 10px; */
-  gap: 1px;
-  /* align-items: center; */
-}
+  .container > header {
+      grid-area: Header;
+      background-color: #494a5e;
+      /* color: #fff; */
+  }
 
-/* Assign areas to child elements */
-.intro {
-  grid-area: intro;
-  background-color: #0077cc;
-}
+  .container > header div.Name {
+      text-align: center;
+  }
 
-.myImage {
-  grid-area: myImage;
-  display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-  background-color: yellowgreen;
-}
+  .container > header div.Menu div#menuItem {
+    background-color: lightslategray;
+    padding: 5px;
+    margin: 10px;
+  }
 
-.myImage img {
-  max-width: 200px;
-  border-radius: 8px;
-}
+  .container > main {
+      grid-area: content;
+      background-color: #222430;
+      color: #fff;
+      display: grid;
+      /* grid-template-areas:
+      "myInfo myImage";
+      grid-template-columns: 2fr 1fr; */ 
+  }
 
+  /*---------HOME------------------------------*/
+  .home {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: "intro myImage";
+    gap: 10px;
+    align-items: center;
+    padding-left: 10px;
+  }
 
+  /* Assign areas to child elements */
+  .intro {
+    grid-area: intro;
+  }
 
-/*---------------------------------*/
-/* .home {
-  display: block;
-} */
+  .myImage {
+    grid-area: myImage;
+  }
 
-.resume,
-.projects,
-.certificates,
-.contactDetails {
-  display: none;
-}
-
-/* Optional: style your menu items so they look clickable */
-.Menu div {
-  cursor: pointer;
-  padding: 6px 10px;
-  user-select: none;
-}
-
-.Menu div:hover {
-  background-color: #f0f0f0;
-}
+  .myImage img {
+    max-width: 200px;
+    border-radius: 8px;
+  }
 
 
 
+  /*---------------------------------*/
 
-/*-----------Resume-----------------------------------------------------*/
-.resume {
-  margin-top: 20px;
-  padding: 10px;
-  /* background-color: #e8f0fe; */
-  border-radius: 8px;
-  max-width: 600px;
-}
+  .resume,
+  .projects,
+  .certificates,
+  .contactDetails {
+    display: none;
+  }
 
-.resume h2 {
-  color: #1a73e8;
-  margin-bottom: 10px;
-}
+  /* Optional: style your menu items so they look clickable */
+  .Menu div {
+    cursor: pointer;
+    padding: 6px 10px;
+    user-select: none;
+  }
 
-.resume a {
-  color: #1a73e8;
-  text-decoration: none;
-  font-weight: 600;
-  border: 2px solid #1a73e8;
-  padding: 8px 12px;
-  border-radius: 6px;
-  display: inline-block;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.resume a:hover {
-  background-color: #1a73e8;
-  color: white;
-}
+  .Menu div:hover {
+    background-color: #f0f0f0;
+  }
 
 
 
 
-/*-----------Projects----------------------------------------------*/
-.projects {
-  margin-top: 20px;
-  padding: 10px;
-  /* background-color: #f5f5f5; */
-  border-radius: 8px;
-  max-width: 600px;
-}
+  /*-----------Resume-----------------------------------------------------*/
+  .resume {
+    margin-top: 20px;
+    padding: 10px;
+    /* background-color: #e8f0fe; */
+    border-radius: 8px;
+    max-width: 600px;
+  }
 
-.projects h2 {
-  font-size: 1.8rem;
-  /* color: #333; */
-  margin-bottom: 12px;
-  border-bottom: 2px solid #4caf50;
-  padding-bottom: 6px;
-}
+  .resume h2 {
+    color: #1a73e8;
+    margin-bottom: 10px;
+  }
 
-.projects a {
-  display: inline-block;
-  margin-bottom: 8px;
-  padding: 8px 12px;
-  background-color: #4caf50;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
+  .resume a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid #1a73e8;
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
 
-.projects a:hover {
-  background-color: #388e3c;
-}
+  .resume a:hover {
+    background-color: #1a73e8;
+    color: white;
+  }
 
 
 
-/*-----------Certificates--------------------------------------------------------*/
-.card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
-  margin-bottom: 16px;
-  background-color: #474343;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
 
-.card h3 {
-  margin-top: 0;
-}
+  /*-----------Projects----------------------------------------------*/
+  .projects {
+    margin-top: 20px;
+    padding: 10px;
+    /* background-color: #f5f5f5; */
+    border-radius: 8px;
+    max-width: 600px;
+  }
 
-.card a {
-  display: block;
-  margin: 6px 0;
-  color: #0077cc;
-  text-decoration: none;
-}
+  .projects h2 {
+    font-size: 1.8rem;
+    /* color: #333; */
+    margin-bottom: 12px;
+    border-bottom: 2px solid #4caf50;
+    padding-bottom: 6px;
+  }
 
-.card a:hover {
-  text-decoration: underline;
-}
+  .projects a {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+
+  .projects a:hover {
+    background-color: #388e3c;
+  }
 
 
 
-/*----------Contact details---------------------------------*/
-.contactDetails {
-  margin-top: 24px;
-  padding: 16px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  background-color: #7a7777;
-}
+  /*-----------Certificates--------------------------------------------------------*/
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #474343;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
 
-.contactDetails a {
-  color: #0066cc;
-  text-decoration: none;
-}
+  .card h3 {
+    margin-top: 0;
+  }
 
-.contactDetails a:hover {
-  text-decoration: underline;
-}
+  .card a {
+    display: block;
+    margin: 6px 0;
+    color: #0077cc;
+    text-decoration: none;
+  }
+
+  .card a:hover {
+    text-decoration: underline;
+  }
+
+
+
+  /*----------Contact details---------------------------------*/
+  .contactDetails {
+    margin-top: 24px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #7a7777;
+  }
+
+  .contactDetails a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+
+  .contactDetails a:hover {
+    text-decoration: underline;
+  }
+/* } */
