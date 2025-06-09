@@ -7,9 +7,30 @@ fetch("data.json")
     .then(data => {
         console.log(data);
 
-/*----------------------------------- */
-        const container = document.getElementById('certificates');
+        const container = document.querySelector('.certificates');
+
+        const projectsSection = document.querySelector('.projects');
         const contactSection = document.querySelector('.contactDetails');
+    
+
+/**-------Projects-------------------------------- */
+        const projects = data.projects;
+
+        projectsSection.innerHTML = '<h2>Projects</h2>';
+
+        projects.forEach((projectUrl, index) => {
+            const link = document.createElement('a');
+            link.href = projectUrl;
+            link.target = '_blank';
+            link.textContent = `Project ${index + 1}`;
+            link.style.display = 'block'; // so links appear on separate lines
+            projectsSection.appendChild(link);
+        });
+
+
+
+/*-------Certificates---------------------------- */
+        
 
         const certs = data.certificates;
         const contact = data.contactDetails;
