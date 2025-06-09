@@ -99,3 +99,28 @@ fetch("data.json")
 
     })
     .catch(error => console.error("Error loading JSON file:", error));
+
+
+
+/**--------------TOGGLING--------------- */
+document.addEventListener('DOMContentLoaded', () => {
+    function showSection(sectionClass) {
+        const sections = ['home', 'resume', 'projects', 'certificates', 'contactDetails'];
+        sections.forEach(sec => {
+            const el = document.querySelector(`.${sec}`) || document.getElementById(sec);
+            if (el) {
+            el.style.display = (sec === sectionClass) ? 'block' : 'none';
+            }
+        });
+    }
+
+    // Menu click handlers
+    document.getElementById('menuHome').addEventListener('click', () => showSection('home'));
+    document.getElementById('menuResume').addEventListener('click', () => showSection('resume'));
+    document.getElementById('menuProjects').addEventListener('click', () => showSection('projects'));
+    document.getElementById('menuCertificates').addEventListener('click', () => showSection('certificates'));
+    document.getElementById('menuContact').addEventListener('click', () => showSection('contactDetails'));
+
+    // Show home on load
+    showSection('home');
+});

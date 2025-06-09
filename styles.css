@@ -33,6 +33,31 @@
     grid-template-columns: 2fr 1fr; */
     
 }
+/*---------------------------------*/
+.home {
+  display: block;
+}
+
+.resume,
+.projects,
+.certificates,
+.contactDetails {
+  display: none;
+}
+
+/* Optional: style your menu items so they look clickable */
+.Menu div {
+  cursor: pointer;
+  padding: 6px 10px;
+  user-select: none;
+}
+
+.Menu div:hover {
+  background-color: #f0f0f0;
+}
+
+
+
 
 /*-----------Resume-----------------------------------------------------*/
 .resume {
