@@ -1,6 +1,7 @@
 /* For decktop */
 /* @media (min-width: 1025px) and (max-width: 1280px) { */
 
+/*------------HEARDER-----------------------------------------------*/
   .container {
     display: grid;
     grid-template-areas:
@@ -15,8 +16,9 @@
 
   .container > header {
       grid-area: Header;
-      background-color: #494a5e;
+      background-color: rgb(253, 183, 54);
       /* color: #fff; */
+      height: 640px;
   }
 
   .container > header div.Name {
@@ -28,6 +30,27 @@
     padding: 5px;
     margin: 10px;
   }
+
+  .container > header div.Name img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 100px;
+  }
+
+  /* Optional: style your menu items so they look clickable */
+  .Menu div {
+    cursor: pointer;
+    padding: 6px 10px;
+    user-select: none;
+  }
+
+  .Menu div:hover {
+    color: orange;
+    background-color: #474343;
+  }
+
+
+/*-----------------------------------------------------------------*/
 
   .container > main {
       grid-area: content;
@@ -74,16 +97,6 @@
     display: none;
   }
 
-  /* Optional: style your menu items so they look clickable */
-  .Menu div {
-    cursor: pointer;
-    padding: 6px 10px;
-    user-select: none;
-  }
-
-  .Menu div:hover {
-    background-color: #f0f0f0;
-  }
 
 
 
